@@ -30,7 +30,7 @@ fn test_create_url(){
         Testcase{"?bc", "bc"},
         Testcase{".bc", "bc"},
         Testcase{"b-.-", "b--"}, // Not Pandoc equivalent: a-.-
-		Testcase{"a<>+!äz", "a--z"},
+		Testcase{"a<>+!äz", "aäz"},
 		Testcase{"bær", "bær"},
         Testcase{"bør", "bør"},
         Testcase{"bΘr", "bΘr"},

@@ -11,7 +11,7 @@ fn create_url(s string) string {
 			` `,`-` {'-'}
 			`_` {'_'}
 			
-			else {''}
+			else {if c>127 {c.ascii_str()} else {''}}
 		}
 	
 		

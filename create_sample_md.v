@@ -32,8 +32,8 @@ fn main(){
         Testcase{"-bc", "-bc"},
         Testcase{"_bc", "_bc"},
         Testcase{" ec", "ec"},
-        Testcase{"?bc", "bc"},
-        Testcase{".bc", "bc"},
+        Testcase{"?gc", "gc"},
+        Testcase{".fc", "fc"},
         Testcase{"b-.-", "b--"}, // Not Pandoc equivalent: a-.-
 		Testcase{"a<>+!äz", "a--z"},
 		Testcase{"bær", "bær"},
