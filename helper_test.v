@@ -1,47 +1,47 @@
 module markdown
 
 struct Testcase {
-	input string
+	input    string
 	expected string
 }
 
-fn test_create_url(){
+fn test_create_url() {
 	test_cases := [
-		Testcase{"abc", "abc"},
-		Testcase{"Abce", "abce"},
-        Testcase{"a-c" "a-c"},
-        Testcase{"a d", "a-d"},
-        Testcase{"a_c", "a_c"},
-        Testcase{"ac", "ac"},
-        Testcase{"a,d", "ad"},
-        Testcase{"a--", "a--"}, // Not Pandoc-equivalent: a--
-        Testcase{"b__", "b__"}, // Not Pandoc-equivalent: a__
-        Testcase{"d..", "d"}, // Not Pandoc-equivalent: a..
-        Testcase{"e??", "e"},
-        Testcase{"f  ", "f"},
-        Testcase{"a--d", "a--d"},
-        Testcase{"a__d", "a__d"},
-        Testcase{"a??e", "ae"},
-        Testcase{"a  e", "a--e"},
-        Testcase{"a..g", "ag"},
-        Testcase{"-bc", "-bc"},
-        Testcase{"_bc", "_bc"},
-        Testcase{" ec", "ec"},
-        Testcase{"?bc", "bc"},
-        Testcase{".bc", "bc"},
-        Testcase{"b-.-", "b--"}, // Not Pandoc equivalent: a-.-
-		Testcase{"a<>+!äz", "aäz"},
-		Testcase{"bær", "bær"},
-        Testcase{"bør", "bør"},
-        Testcase{"bΘr", "bΘr"},
-        Testcase{"四五", "四五"},
-		 Testcase{"bár", "bár"},
-         Testcase{"àrrivé", "àrrivé"},
+		Testcase{'abc', 'abc'},
+		Testcase{'Abce', 'abce'},
+		Testcase{'a-c', 'a-c'},
+		Testcase{'a d', 'a-d'},
+		Testcase{'a_c', 'a_c'},
+		Testcase{'ac', 'ac'},
+		Testcase{'a,d', 'ad'},
+		Testcase{'a--', 'a--'} /* Not Pandoc-equivalent: a-- */,
+		Testcase{'b__', 'b__'} /* Not Pandoc-equivalent: a__ */,
+		Testcase{'d..', 'd'} /* Not Pandoc-equivalent: a.. */,
+		Testcase{'e??', 'e'},
+		Testcase{'f  ', 'f'},
+		Testcase{'a--d', 'a--d'},
+		Testcase{'a__d', 'a__d'},
+		Testcase{'sizeof and __offsetof', 'sizeof-and-__offsetof'},
+		Testcase{'a??e', 'ae'},
+		Testcase{'a  e', 'a--e'},
+		Testcase{'a..g', 'ag'},
+		Testcase{'-bc', '-bc'},
+		Testcase{'_bc', '_bc'},
+		Testcase{' ec', 'ec'},
+		Testcase{'?bc', 'bc'},
+		Testcase{'.bc', 'bc'},
+		Testcase{'b-.-', 'b--'} /* Not Pandoc equivalent: a-.- */,
+		Testcase{'a<>+!äz', 'aäz'},
+		Testcase{'bær', 'bær'},
+		Testcase{'bør', 'bør'},
+		Testcase{'bΘr', 'bΘr'},
+		Testcase{'四五', '四五'},
+		Testcase{'bár', 'bár'},
+		Testcase{'àrrivé', 'àrrivé'},
 	]
 
-	for testcase in test_cases{
+	for testcase in test_cases {
 		result := create_url(testcase.input)
 		assert result == testcase.expected
 	}
 }
-

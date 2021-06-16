@@ -26,6 +26,8 @@
 # a--d 
 [a__d](#a__d)
 # a__d 
+[sizeof and __offsetof](#sizeof-and-__offsetof)
+# sizeof and __offsetof 
 [a??e](#ae)
 # a??e 
 [a  e](#a--e)
