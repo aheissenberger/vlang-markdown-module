@@ -1,54 +1,54 @@
-[abc](abc)
+[abc](#abc)
 # abc 
-[Abc](abc)
+[Abc](#abc)
 # Abc 
-[a-c](a-c)
+[a-c](#a-c)
 # a-c 
-[a c](a-c)
+[a c](#a-c)
 # a c 
-[a_c](a_c)
+[a_c](#a_c)
 # a_c 
-[a.c](a.c)
+[a.c](#a.c)
 # a.c 
-[a,c](ac)
+[a,c](#ac)
 # a,c 
-[a--](a)
+[a--](#a)
 # a-- 
-[a__](a)
+[a__](#a)
 # a__ 
-[a..](a)
+[a..](#a)
 # a.. 
-[a??](a)
+[a??](#a)
 # a?? 
-[a  ](a)
+[a  ](#a)
 # a   
-[a--d](a-d)
+[a--d](#a-d)
 # a--d 
-[a__d](a_d)
+[a__d](#a_d)
 # a__d 
-[a??d](ad)
+[a??d](#ad)
 # a??d 
-[a  d](a-d)
+[a  d](#a-d)
 # a  d 
-[a..d](a.d)
+[a..d](#a.d)
 # a..d 
-[-bc](bc)
+[-bc](#bc)
 # -bc 
-[_bc](bc)
+[_bc](#bc)
 # _bc 
-[ bc](bc)
+[ bc](#bc)
 #  bc 
-[?bc](bc)
+[?bc](#bc)
 # ?bc 
-[.bc](bc)
+[.bc](#bc)
 # .bc 
-[a-.-](a)
+[a-.-](#a)
 # a-.- 
-[bær](br)
+[bær](#br)
 # bær 
-[bør](br)
+[bør](#br)
 # bør 
-[bΘr](br)
+[bΘr](#br)
 # bΘr 
-[四五]()
+[四五](#)
 # 四五 

@@ -43,7 +43,7 @@ fn main(){
         // Testcase{"àrrivé", "arrive"},
 	]
 	for testcase in test_cases{
-		println('[${testcase.input}](${testcase.expected})')
+		println('[${testcase.input}](#${testcase.expected})')
 		println('# $testcase.input ')
 	}
 }
