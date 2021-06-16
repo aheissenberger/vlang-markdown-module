@@ -32,10 +32,10 @@ fn main(){
         Testcase{"-bc", "-bc"},
         Testcase{"_bc", "_bc"},
         Testcase{" ec", "ec"},
-        Testcase{"?gc", "gc"},
-        Testcase{".fc", "fc"},
+        Testcase{"?bc", "bc"},
+        Testcase{".bc", "bc"},
         Testcase{"b-.-", "b--"}, // Not Pandoc equivalent: a-.-
-		Testcase{"a<>+!äz", "a--z"},
+		Testcase{"a<>+!äz", "aäz"},
 		Testcase{"bær", "bær"},
         Testcase{"bør", "bør"},
         Testcase{"bΘr", "bΘr"},
